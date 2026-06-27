@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OTP Detector</string>
+    <string name="module_desc">Detects OTP from notifications and copies to clipboard</string>
+</resources>

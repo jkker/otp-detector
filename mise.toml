@@ -1,0 +1,25 @@
+[tools]
+android-sdk = "1.0"
+java = "21.0.2"
+gradle = "8.14.4"
+kotlin = "2.1.21"
+
+[env]
+ANDROID_HOME = "{{env.HOME}}/.local/share/mise/installs/android-sdk/1.0"
+ANDROID_SDK_ROOT = "{{env.HOME}}/.local/share/mise/installs/android-sdk/1.0"
+
+[tasks.build]
+description = "Build debug APK"
+run = "./gradlew assembleDebug"
+
+[tasks.test]
+description = "Run all unit tests"
+run = "./gradlew test"
+
+[tasks.lint]
+description = "Run lint checks"
+run = "./gradlew lintDebug"
+
+[tasks.clean]
+description = "Clean the build directory"
+run = "./gradlew clean"
